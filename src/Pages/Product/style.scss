@@ -1,0 +1,203 @@
+
+
+.product {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .bet_carousel{
+        display: none;
+        // height: 250px;
+        width: 1240px;
+
+
+        .carousel{
+            position: relative;
+            width : 100%;
+            margin-bottom: 30px;
+            align-items: center;
+            .d-block{
+                object-fit: cover;
+                border-radius: 25px;
+
+            }
+        }
+    }
+    
+    // .tout{
+    //     display:none;}
+    // }
+    
+    .gallery {
+        // display:none;
+        position: relative;
+
+        img {
+            height: 415px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        span {
+            color: white;
+            position: absolute;
+            right: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+        }
+
+        .fa-solid {
+            color: white;
+            font-size: 70px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fa-angle-left {
+            left: 20px;
+        }
+
+        .fa-angle-right {
+            right: 20px;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+        align-items: center;
+        margin-top: 30px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            :first-child {
+                font-size: 18px;
+            }
+
+            :last-child {
+                font-size: 18px;
+            }
+        }
+
+        .owner {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        .tags {
+            display: flex;
+            gap: 20px;
+
+            span {
+                background-color: #FF6060;
+                color: white;
+                border-radius: 10px;
+                padding: 5px 30px;
+            }
+        }
+
+        .stars {
+            display: flex;
+            gap: 10px;
+
+            .fa-star {
+                color: #FF6060;
+                font-size: 35px;
+
+                &.empty {
+                    color: lightgray;
+                }
+            }
+        }
+    }
+    .additional-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .Description{
+            display: flex;
+            flex-direction: column;
+            height: 5rem;
+            gap: 25px;
+
+
+            .desc {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 22px;
+                background-color: #FF6060;
+                color: white;
+                border-radius: 10px;
+                padding: 15px 30px;
+                width: 30rem;
+
+            }
+
+            .desc_text{
+                display: block;
+                width: 30rem;
+                background-color: #ffffff;
+                color: #FF6060;
+                padding: 5px 30px;
+                line-height : 25px;
+            }
+
+        }
+
+        .Equipments{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: 70px;
+            
+            .equ {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #FF6060;
+                color: white;
+                font-size: 22px;
+                border-radius: 10px;
+                padding: 15px 30px;
+                width: 30rem;
+            }
+            .equ_text{
+                display: block;
+                height: 17rem;
+                width: 30rem;
+                background-color: #ffffff;
+                color: #FF6060;
+                padding: 5px 30px;
+                li{
+                    margin-top: 5px;
+                }
+            }
+        }
+
+    }
+}
